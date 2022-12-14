@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventario app</title>
+    <!-- BOOTTRAP CDN -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+  />
+</head>
+<body>
+    <!-- -navegacion -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            Inventario
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- aplication -->
+        <div id="app" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add a Product</h4>
+                    </div>
+                    <form   id="product-form" action="" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.01" placeholder="Product Price" class="form-control">
+
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" placeholder="Year Product "  min="2021" value="2022" max="2030" class="form-control">
+
+                        </div>
+                        <input type="submit" value="save" class=" btn btn-primary btn-block">
+                    </form>
+
+                </div>
+
+            </div>
+            <div id="Product-list" class="col-md-8">
+                
+            </div>
+    
+     </div>
+         </div>
+ <script src="js/app.js"></script>
+</body>
+</html>
